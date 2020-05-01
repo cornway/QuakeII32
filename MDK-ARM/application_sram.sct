@@ -1,5 +1,5 @@
-LR_IROM1 0x20020000 0x0005c000 {    ; load region size_region
-  ER_IROM1 0x20020000 0x0005c000 {  ; load address = execution address
+LR_IROM1 0x08180000 0x00080000 {    ; load region size_region
+  ER_IROM1 0x08180000 0x00080000 {  ; load address = execution address
    *.o (RESET, +First)
    *(InRoot$$Sections)
    .ANY (+RO)
@@ -19,10 +19,10 @@ LR_IROM1 0x20020000 0x0005c000 {    ; load region size_region
   DTCM 0x20001000 UNINIT 0x00017000  {  ; DTCM
    *(BSPBSS)
   }
-  SDRAM_BSS 0xc0000000 0x00070000  {  ; RW data
+  SDRAM_BSS 0xc0000000 0x00830000  {  ; RW data
    .ANY (+RW +ZI)
   }
-  SDRAM_BSS2 0xC0070000 UNINIT 0x00f90000  {  ; SDRAM
+  SDRAM_BSS2 0xC0830000 UNINIT 0x007c0000  {  ; SDRAM
     *(HEAP)
   }
 }
