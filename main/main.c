@@ -21,7 +21,7 @@ int main(void)
 
 void mainloop (int argc, char **argv)
 {
-    Sys_CacheInit();
+    //Sys_CacheInit();
     cmd_register_i32(&g_profile_per, "profper");
 	Qcommon_Init (argc, argv);
 
