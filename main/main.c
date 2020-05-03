@@ -28,6 +28,7 @@ void mainloop (int argc, char **argv)
 	while (1)
 	{
 		Qcommon_Frame (0.1);
+        bsp_tickle();
 	}
 }
 
