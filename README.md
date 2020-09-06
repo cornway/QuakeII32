@@ -1,4 +1,4 @@
-# QuakeII32
+# Quake 2
 Quake 2 port for stm32xx boards
 
 # How to build
